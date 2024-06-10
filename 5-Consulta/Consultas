@@ -1,0 +1,23 @@
+A) Apresentar todos os dados dos veículos de um determinado proprietário (informado pelo usuário através do CPF);
+
+SELECT * FROM veiculos WHERE CPF = 'CPF_Desejado';
+
+
+B) Consultar proprietário(s) por qualquer parte do nome;
+
+SELECT * FROM proprietario WHERE Nome LIKE '%parte_do_nome%';
+
+
+C) Mostrar os dados da infração e do veículo que tiveram infrações cadastradas no Detran em um período (ou data) no padrão DE... ATÉ...;
+
+SELECT * FROM infracao i
+JOIN veiculos v on i.Placa = v.Placa
+WHERE i.DataHora BETWEEN 'data_inicio' AND 'data_fim';
+
+
+D) Pesquisar o número de veículos que foram cadastrados em cada modelo, ordenando pelo número de veículos em ordem decrescente;
+
+SELECT ModeloID, COUNT(*) AS NumeroDeVeiculos
+FROM veiculos
+GROUP BY ModeloID
+ORDER BY COUNT(*) DESC;
