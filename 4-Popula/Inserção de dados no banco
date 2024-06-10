@@ -26,7 +26,7 @@ VALUES
 (5, 'Centro', '78912-345', 'Cidade D', 'Estado D');
 
 -- Inserção de dados na tabela veiculos
-INSERT INTO veiculos (Placa, Chassi, CorPredominante, ModeloID, CategoriaID, AnoInfracao, CPF)
+INSERT INTO veiculos (Placa, Chassi, CorPredominante, ModeloID, CategoriaID, AnoFabricacao, CPF)
 VALUES 
 ('ABC1234', '9BWZZZ377VT004251', 'Preto', 100001, 1, 2015, '12345678901'),
 ('GHJ5678', '4BWZZZ377VT004256', 'Amarelo', 100006, 6, 2019, '44444444444'),
