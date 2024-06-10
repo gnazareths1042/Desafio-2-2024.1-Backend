@@ -84,7 +84,7 @@ CREATE TABLE veiculos (
     CorPredominante VARCHAR(50),
     ModeloID INT,
     CategoriaID INT,
-    AnoInfracao INT,
+    AnoFabricacao INT,
     CPF VARCHAR(11),
     FOREIGN KEY (ModeloID) REFERENCES modelo(ModeloID),
     FOREIGN KEY (CategoriaID) REFERENCES categoria(CategoriaID),
